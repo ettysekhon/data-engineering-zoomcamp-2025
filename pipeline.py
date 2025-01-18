@@ -1,3 +1,13 @@
-import pandas 
+import sys
+import pandas as pd
 
-print("Running python script")
+# sys.argv allows to pass arguments to the script from the commandline
+print(sys.argv)
+
+# sys.argv[0] > name of the file
+# sys.argv[1] > first argument passed
+day = sys.argv[1]
+
+# Here is the pandas code
+
+print(f"job finished successfully for for day = {day}")
