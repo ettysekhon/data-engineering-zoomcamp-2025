@@ -1,5 +1,7 @@
 # Data Engineering Zoomcamp 2025
 
+You can make a good start by following these great [instructions](https://spotted-hardhat-eea.notion.site/Week-1-Containerization-and-Infrastructure-as-Code-15729780dc4a80a08288e497ba937a37)
+
 ```bash
 docker build -t test:pandas .
 docker run -it test:pandas
@@ -84,3 +86,35 @@ Some commands:
 - \l - Lists all databases*
 - \du - Lists all users and their roles*
 - \q - Exits pgcli*
+
+## Setup virtual environment
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install jupyter
+pip install notebook
+pip install numpy pandas matplotlib sqlalchemy psycopg2-binary python-dotenv pyarrow
+```
+
+```bash
+sudo apt update
+sudo apt install libpq-dev
+pip install psycopg2
+```
+
+or on mac
+
+```bash
+brew install postgresql
+which pg_config
+pip install psycopg2 --config-settings=--pg-config=/path/to/pg_config
+```
+
+After running some SQL commands you can run Jupyter on the virtual environment:
+
+```bash
+jupyter notebook
+```
+
+Under the New dropdown menu, select Python 3 (ipykernel)
