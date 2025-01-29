@@ -152,7 +152,7 @@ Consider only `lpep_pickup_datetime` when filtering by date.
 - Bedford, East Harlem North, Astoria Park
 
 ```sql
-SSELECT 
+SELECT 
     tzl."Zone" AS pickup_zone,
     SUM(gtd.total_amount) AS total_amount_sum
 FROM 

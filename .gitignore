@@ -1,4 +1,36 @@
+# Terraform state files
+*.tfstate
+*.tfstate.backup
+
+# Terraform crash logs
+crash.log
+
+# Terraform lock files
+.terraform.lock.hcl
+
+# Terraform provider cache and working directory
+.terraform/
+.terraformrc
+terraform.tfvars
+terraform.tfvars.json
+
+# Ignore override files (custom local configurations)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore plan output files
+*.tfplan
+
+# Ignore logs and debug files
+terraform.log
+
 /terraform_1.10.4_darwin_arm64
+
+
 /google-cloud-sdk
-de-zoomcamp-*.json
+gcp_creds.json
 .DS_Store
+
+
